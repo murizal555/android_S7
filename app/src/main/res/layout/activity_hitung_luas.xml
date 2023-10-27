@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HitungLuas"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:text="aplikasi penghitung luas persegi"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.Material3.TextInputEditText.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_margin="16dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/panjangEditText"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:hint="@string/masukkan_panjang"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:hint="@string/tinggi"/>
+<com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/tinggiEditText"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+</com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.Material3.TextInputEditText.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:layout_margin="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"></com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:id="@+id/hitungButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/hitung"/>
+    <TextView
+        android:id="@+id/hasilTextView"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="38sp"
+        android:textStyle="bold" />
+</LinearLayout>
